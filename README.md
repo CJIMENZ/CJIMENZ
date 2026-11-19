@@ -1,40 +1,42 @@
 # Christian Jimenez-Escorcia
 
-**Staff Engineer · Liberty Energy**  
-Software, AI, and teaching people how to build with both.
+**Staff Engineer – Application Support · Liberty Energy**  
+Software engineering, field operations, and AI-assisted delivery.
 
-A guy asked me to coffee because he wanted help building an app. We sat down to talk about what he wanted to make, and I ended up teaching him how to build it himself. That’s how [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course) started.
+I started out scheduling chemical deliveries around how fast a tank would empty. Today I build logistics software for the planners, dispatchers, and carriers making those calls. I lead a development team’s technical work, build across the stack, and work with QA and platform engineers on what’s ready to release.
 
-It’s now a 14-module course with videos and hands-on builds, from your first useful prompt to Git, APIs, authentication, and agents. I still have a day job. It turns out I get to do a lot of this there, too.
+[Engineering case studies](engineering-notes.md) · [Denver Energy Network](https://www.denverenergynetwork.com/) · [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course)
 
-## What I do at Liberty
+## 01 / Selected engineering work
 
-I’m a **Staff Engineer – Application Support** and a product owner for logistics software at Liberty Energy. I lead a development team’s technical work and contribute across the stack. When a workflow is hard to pin down in a ticket, I build a working screen and put it in front of the people who’ll use it. Their feedback gives frontend, backend, QA, and platform engineers something concrete to build, test, and support.
+| System | What I did | Where to look |
+| --- | --- | --- |
+| **Liberty Energy logistics** | Own the product work for an operational platform, prototype workflows with field users, and contribute across React, .NET/C#, and Oracle. I test in staging and help make the production go/no-go call. | [Field pilots, QA, and releases](engineering-notes.md#liberty-energy--logistics-software) |
+| **AI Meeting Memory** | Built a mobile recorder with resumable uploads, a Postgres job queue, and OAuth for connecting assistants. A worker can retry processing, and audio cleanup waits on a verified transcript. | [System design and verification](engineering-notes.md#ai-meeting-memory--a-recorder-that-can-recover) · [Public recovery code](https://github.com/CJIMENZ/cpu-transcript-recovery/blob/main/transcribe_cpu.py) |
+| **Denver Energy Network** | As a board member, I lead the website and AI work. I built the Next.js site and admin tools for CRM, sponsorships, campaigns, registration and QR check-in, and Stripe payments and receipts. | [Live site](https://www.denverenergynetwork.com/) · [Behind the site](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it) |
 
-I’ve trained **about 500 people on Microsoft 365 Copilot** and **about 50 on Claude**, by my estimate. People bring real work to the sessions. We write a prompt, revise it, check the output, and talk through when the task calls for another approach. I’ve also helped shape Liberty’s Claude adoption and coach developers on using agents in their own repositories.
+## 02 / How I teach teams to build with AI
 
-One of my favorite pilots turned a UI change into a **90-second before-and-after video**. Playwright captured the screens, ElevenLabs voiced the walkthrough, and Remotion rendered it. The clip gave stakeholders something they could watch and respond to right from the review. I’ve also worked on carrying decisions from Teams into Jira and giving coding agents enough context to pick up a ticket. Engineers still write the acceptance criteria, check the diff, run the tests, and own the merge.
+A guy asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents. I still have a day job. I get to teach there, too.
+
+At Liberty, I’ve trained **about 500 people on Microsoft 365 Copilot** and **about 50 on Claude**, by my estimate. Our nine-session Copilot training report recorded **69% more weekly actions and 41% more weekly active users** across the measurement window. I also helped shape Claude adoption and coached engineers through a delivery workflow that takes work from Teams to Jira to a repository, with humans writing the acceptance criteria, reviewing the diff, and owning the merge.
+
+One of my favorite pilots turned a merge request into a **90-second before-and-after video**. Playwright captured the change, ElevenLabs narrated it, and Remotion rendered it. The clips took under five minutes of developer time each in the pilot, and stakeholders could leave feedback right where the change was being reviewed.
 
 > “You can outsource the lookup, you can’t outsource the accountability.”
 
-## How I got here
+## 03 / How I got here
 
-I finished a petroleum engineering degree at Colorado School of Mines in 2016, just after the oil downturn. My first engineering job was in aerospace manufacturing at CableNet. I worked on ground support equipment and rocket umbilicals, and did the CAD for equipment used to fuel satellites before launch.
+- **2016.** I graduated from Colorado School of Mines in petroleum engineering, then went into aerospace manufacturing. At CableNet I worked on rocket umbilicals and did the CAD for ground equipment used to fuel satellites before launch.
+- **2018–2022.** I worked the Permian and DJ basins at Liberty and built a three-day tank-volume forecast to schedule chemical deliveries. In **November 2022**, I moved into Job Profitability and started writing Excel VBA by hand.
+- **2023 onward.** With my first kid on the way, I signed up for ChatGPT to help write emails. That grew into Python reporting automation, document-grounded chat, and co-founding **Accelerated Innovations**. We built a coaching assistant with custom AI workflows and a tutoring operations suite that went from lesson requests through invoicing and tutor payroll. I earned more than 20 programming course certificates while we built.
 
-I joined Liberty in 2018 and worked in the Permian and DJ basins. One of the first tools I built there forecast tank volumes three days out so we could schedule chemical deliveries. In **November 2022**, I moved into Job Profitability and started writing Excel macros by hand. With my first kid on the way in 2023, I signed up for ChatGPT to help write emails. Soon I was using it on those macros, moving reporting into Python, and by 2024 building a chat app that could answer questions from documents.
+I’ve run Llama on my own NVIDIA hardware, built a vision chatbot on a 64 GB Mac, served models through Ollama, and moved a prototype from an on-premises Tesla T4 to OpenAI’s API. I’ve worked in Codex, Claude Code, Cursor with Claude and Grok, and used Antigravity to build Denver Energy Network’s site.
 
-I co-founded **Accelerated Innovations** and took more than 20 programming courses while we built. The work ranged from an AI coaching assistant with two distinct voices and custom response workflows to a tutoring operations platform that handled everything from a parent’s lesson request to scheduling, invoicing, and tutor payroll.
+## 04 / Open the code
 
-## Where else I build
-
-I’ve run Llama on my own NVIDIA hardware, built a local vision chatbot on a 64 GB Mac, served models to Python apps through Ollama, and moved a coaching prototype from an on-premises Tesla T4 to the OpenAI API. I’ve built with Codex, Claude Code, Cursor with Claude and Grok, and Google Antigravity. At work I move between React and Next.js, .NET services, Postgres and Oracle, and AI integrations across Microsoft 365, AWS, and OCI.
-
-I’m also a board member at [Denver Energy Network](https://www.denverenergynetwork.com/), where I lead the website and AI work. I built the Next.js site and the admin tools behind it, including the CRM and sponsor tracking, mailing lists and scheduled campaigns, event registration and QR check-in, donations and receipts, and AI-assisted writing for events and campaigns.
-
-## Try something I built
-
-- **[Codezilla workflow core](https://github.com/CJIMENZ/codezilla-workflow-core)** · A TypeScript workflow for taking a spec through implementation, review, and approval. [Run the examples](https://github.com/CJIMENZ/codezilla-workflow-core#run-the-examples).
-- **[Ollama local workflows](https://github.com/CJIMENZ/ollama-local-workflows)** · A Python example for [adding local inference](https://github.com/CJIMENZ/ollama-local-workflows#use-it-in-your-application) to an app.
-- **[CPU transcript recovery](https://github.com/CJIMENZ/cpu-transcript-recovery)** · The fallback I built for my meeting recorder. [Turn sample speech into timestamped JSON](https://github.com/CJIMENZ/cpu-transcript-recovery#try-it-with-synthetic-speech).
-- **[Food Tinder](https://github.com/CJIMENZ/Food-Tinder)** · Swipe on recipes and build a taste profile that lives in your browser.
-- **[Potluck Postcard](https://github.com/CJIMENZ/potluck-postcard)** · [Make an invitation](https://cjimenz.github.io/potluck-postcard/) your guests can add to their calendars.
+- [CPU transcript recovery](https://github.com/CJIMENZ/cpu-transcript-recovery) · Validate timestamps and publish a complete transcript without replacing an existing file. [Run it on sample speech](https://github.com/CJIMENZ/cpu-transcript-recovery#try-it-with-synthetic-speech).
+- [Ollama local workflows](https://github.com/CJIMENZ/ollama-local-workflows) · Add local model inference to a Python app. Conversation state advances only after a complete response. [Try the integration](https://github.com/CJIMENZ/ollama-local-workflows#use-it-in-your-application).
+- [Codezilla workflow core](https://github.com/CJIMENZ/codezilla-workflow-core) · An in-memory TypeScript pilot with versioned specifications and approval rules. [Read the workflow tests](https://github.com/CJIMENZ/codezilla-workflow-core/blob/main/tests/unit/workflow-service.test.ts).
+- [Food Tinder](https://github.com/CJIMENZ/Food-Tinder) · A browser-local recipe app that learns your taste from swipes.
+- [Potluck Postcard](https://github.com/CJIMENZ/potluck-postcard) · A party invitation editor with calendar export.
