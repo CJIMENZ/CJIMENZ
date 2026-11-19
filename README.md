@@ -1,23 +1,26 @@
 # Christian Jimenez-Escorcia
 
-**Staff Engineer – Application Support · Liberty Energy**  
-Software engineering, field operations, and AI-assisted delivery.
+**Software founder · Consultant · Nonprofit board member**
 
-I started out scheduling chemical deliveries around how fast a tank would empty. Today I build logistics software for the planners, dispatchers, and carriers making those calls. I lead a development team’s technical work, build across the stack, and work with QA and platform engineers on what’s ready to release.
+I co-founded **Accelerated Innovations** to build software around the way people actually work. As a consultant, I help teams figure out what to build and make it tangible, from scoping a document-sharing portal to prototyping an app for dispatchers and drivers.
 
-[Engineering case studies](engineering-notes.md) · [Denver Energy Network](https://www.denverenergynetwork.com/) · [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course)
+In Denver, I give back through [Denver Energy Network](https://www.denverenergynetwork.com/). I serve on the board and build the tools our volunteers use to put on events, stay in touch with members, and bring the local energy community together.
+
+AI is also what I tinker with for fun. A guy asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents.
+
+[Engineering case studies](engineering-notes.md)
 
 ## 01 / Selected engineering work
 
 | System | What I did | Where to look |
 | --- | --- | --- |
-| **Liberty Energy logistics** | Own the product work for an operational platform, prototype workflows with field users, and contribute across React, .NET/C#, and Oracle. I test in staging and help make the production go/no-go call. | [Field pilots, QA, and releases](engineering-notes.md#liberty-energy--logistics-software) |
-| **AI Meeting Memory** | Built a mobile recorder with resumable uploads, a Postgres job queue, and OAuth for connecting assistants. A worker can retry processing, and audio cleanup waits on a verified transcript. | [System design and verification](engineering-notes.md#ai-meeting-memory--a-recorder-that-can-recover) · [Public recovery code](https://github.com/CJIMENZ/cpu-transcript-recovery/blob/main/transcribe_cpu.py) |
 | **Denver Energy Network** | As a board member, I lead the website and AI work. I built the Next.js site and admin tools for CRM, sponsorships, campaigns, registration and QR check-in, and Stripe payments and receipts. | [Live site](https://www.denverenergynetwork.com/) · [Behind the site](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it) |
+| **AI Meeting Memory** | Built a mobile recorder with resumable uploads, a Postgres job queue, and OAuth for connecting assistants. A worker can retry processing, and audio cleanup waits on a verified transcript. | [System design and verification](engineering-notes.md#ai-meeting-memory--a-recorder-that-can-recover) · [Public recovery code](https://github.com/CJIMENZ/cpu-transcript-recovery/blob/main/transcribe_cpu.py) |
+| **Liberty Energy logistics** | Own the product work for an operational platform, prototype workflows with field users, and contribute across React, .NET/C#, and Oracle. I test in staging and help make the production go/no-go call. | [Field pilots, QA, and releases](engineering-notes.md#liberty-energy--logistics-software) |
 
-## 02 / How I teach teams to build with AI
+## 02 / At Liberty Energy
 
-A guy asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents. I still have a day job. I get to teach there, too.
+My day job is **Staff Engineer – Application Support** at Liberty Energy. I lead a development team’s technical work, build across the stack, and work with QA and platform engineers on what’s ready to release. It’s a good fit for someone who started out scheduling chemical deliveries around how fast a tank would empty.
 
 At Liberty, I’ve trained **about 500 people on Microsoft 365 Copilot** and **about 50 on Claude**, by my estimate. Our nine-session Copilot training report recorded **69% more weekly actions and 41% more weekly active users** across the measurement window. I also helped shape Claude adoption and coached engineers through a delivery workflow that takes work from Teams to Jira to a repository, with humans writing the acceptance criteria, reviewing the diff, and owning the merge.
 
