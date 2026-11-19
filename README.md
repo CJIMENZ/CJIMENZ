@@ -1,6 +1,18 @@
 # Christian Jimenez-Escorcia
 
-I build software and help teams use AI in everyday development. My work spans product ownership, full-stack applications, integrations, and workflows that connect requirements to implementation, code review, and QA.
+I’m a staff engineer and product owner at Liberty Energy. I build software, automate recurring work, and help teams put AI to use in software delivery. I got here through aerospace manufacturing, oilfield operations, and financial analysis.
+
+## My path into software
+
+**2016–2018 · From petroleum engineering to aerospace manufacturing.** I graduated from Colorado School of Mines in 2016 with a B.S. in Petroleum Engineering. The oil downturn made it a tough time to enter the industry, so I joined CableNet as a project engineer. We built electrical ground support equipment and cable harnesses for customers including Lockheed Martin, United Launch Alliance, and JPL. I worked on launch-vehicle umbilicals and owned the CAD work for equipment used in pre-launch satellite fueling. That job taught me to carry a design from requirements through manufacturing and test.
+
+**2018–2022 · Field engineering and my first automation projects.** I joined Liberty Energy in 2018, worked as a field engineer in the Permian Basin, and moved to the DJ Basin in January 2021. One of my early builds forecast tank volumes 72 hours ahead and scheduled chemical deliveries around the forecast. I’d taken an introductory computer science class at Mines and had always enjoyed setting up servers and networks. During the pandemic I taught myself more Python and Excel VBA, and wrote thinkScript studies and scans in thinkorswim to turn chart patterns I was watching into rules I could test. I spend more time on engineering now and take a longer-term approach to investing.
+
+**2022–2024 · Job Profitability, VBA, and the first AI builds.** Around Thanksgiving 2022 I transitioned into Job Profitability and started writing Excel macros by hand. In 2023, with my first child on the way, I signed up for ChatGPT. I used it for things like drafting emails and then brought it into the VBA work I had already started. By around 2024 I had finished the main round of macro automation. In June 2024 I started building Crystal, an early chatbot with document retrieval. I kept experimenting with local language models and built the desktop chatbot that later became my public Ollama example. I also moved more of my profitability reporting into Python.
+
+**2024–2025 · Building a business and learning full-stack development.** While working on Accelerated Innovations, I went deeper on React, Next.js, and TypeScript. I built software with a partner across projects including SNS Bot and a tutoring operations platform, and earned more than 20 programming course certificates along the way. Working on those applications taught me how much of shipping happens after the first demo, from putting real authentication and data flows in place to testing the cases users will actually hit.
+
+**Today · Product ownership, AI implementation, and teaching.** I own delivery for logistics software and help teams turn stakeholder needs into requirements, implementation plans, and QA scenarios. I build AI-assisted workflows that produce reviewable changes and give engineers evidence to decide what ships. I’ve led hands-on Claude Code and Copilot training. Outside work, I built AI Coffee Shop to teach people to go from a prompt to a working app, and I’ve experimented with local models, meeting transcription, and agent collaboration. Those interests came together in Calcifer, a personal system for capturing meetings, coordinating agents, and keeping a shared memory.
 
 ## Selected projects
 
@@ -11,4 +23,4 @@ I build software and help teams use AI in everyday development. My work spans pr
 - **[Food Tinder](https://github.com/CJIMENZ/Food-Tinder)** — I built a local-first recipe app that learns ingredient and cuisine preferences from swipes and keeps the taste profile in the browser. [Try it locally](https://github.com/CJIMENZ/Food-Tinder#local-development).
 - **[Potluck Postcard](https://github.com/CJIMENZ/potluck-postcard)** — I turned the calendar export from a party RSVP app into a browser invitation maker. Edit a postcard and download an event your guests can add to their calendars. [Make a postcard](https://cjimenz.github.io/potluck-postcard/).
 
-I’m interested in AI-assisted delivery workflows that make it easier for teams to understand what changed, verify the result, and decide what ships.
+The problems I like most start with something people already do by hand. I want to understand the job, build the smallest thing that improves it, and leave the next person enough context to make it better.
