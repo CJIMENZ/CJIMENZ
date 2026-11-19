@@ -2,7 +2,7 @@
 
 **Software founder · Consultant · Nonprofit board member**
 
-I co-founded **Accelerated Innovations** to build software around the way people actually work. As a consultant, I help teams figure out what to build and make it tangible, from scoping a document-sharing portal to prototyping an app for dispatchers and drivers.
+I use AI to dream up dinosaur adventures with my kids, and I’m the friend people call when they have an app idea they want to try. I co-founded **Accelerated Innovations**, help businesses figure out what’s worth building, and teach engineering teams how to use AI on software they ship. My favorite part of teaching is handing over the keyboard and seeing where someone else takes it.
 
 In Denver, I give back through [Denver Energy Network](https://www.denverenergynetwork.com/). I serve on the board and build the tools our volunteers use to put on events, stay in touch with members, and bring the local energy community together.
 
