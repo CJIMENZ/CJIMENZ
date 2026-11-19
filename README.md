@@ -8,7 +8,7 @@ I graduated from Colorado School of Mines in 2016 with a B.S. in Petroleum Engin
 
 I joined Liberty Energy in 2018, first as a field engineer in the Permian Basin and later in the DJ Basin. I built a tank-volume forecast that looked 72 hours ahead and used it to schedule chemical deliveries. Before generative AI became part of my workflow, I was already setting up servers and networks, writing Python and Excel VBA, and building thinkScript scans in thinkorswim.
 
-Around Thanksgiving 2022, I moved into Job Profitability and started writing Excel macros by hand. In 2023, with my first child on the way, I signed up for ChatGPT. It started with things like drafting emails, then became a tool for finishing the automation I had already started. I moved more of the reporting into Python and built Crystal, a chatbot with document retrieval, in 2024. While building Accelerated Innovations and projects such as SNS Bot and the LLT tutoring platform, I went deeper on React, Next.js, and TypeScript and earned 20+ programming course certificates.
+Around Thanksgiving 2022, I moved into Job Profitability and started writing Excel macros by hand. In 2023, with my first child on the way, I signed up for ChatGPT. It started with things like drafting emails, then became a tool for finishing the automation I had already started. I moved more of the reporting into Python and built Crystal, a chatbot with document retrieval, in 2024. I co-founded Accelerated Innovations, where we built projects such as SNS Bot and the LLT tutoring platform. That work pushed me deeper into React, Next.js, and TypeScript, and I earned 20+ programming course certificates along the way.
 
 ## Running models and building across systems
 
