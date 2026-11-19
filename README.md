@@ -18,13 +18,13 @@ Around Thanksgiving 2022, I moved into Job Profitability and started writing Exc
 
 ## Denver Energy Network
 
-As a board member, I lead the website and AI work for [Denver Energy Network](https://www.denverenergynetwork.com/). I built the public site and the Next.js admin platform the team uses to manage the organization’s work.
+As a board member, I lead the website and AI work for [Denver Energy Network](https://www.denverenergynetwork.com/). I built the public site and the Next.js admin platform the team uses to manage the organization’s work, with MongoDB for data and Vercel for deployment.
 
 - **CRM and sponsorships** with lead tracking, outreach history, sponsor pipelines, and coordination between teams.
-- **Events** with Google Calendar integration, public event listings, registration, RSVPs, check-in, and follow-up.
+- **Events** with Google Calendar integration, public event listings, registration, RSVPs, QR check-in, follow-up, and event photo galleries.
 - **Mailing lists and campaigns** with SendGrid, a campaign editor, templates, scheduled sends, reminders, reporting, and unsubscribe handling.
 - **Donations and payments** with Stripe, tracking, and automated receipts.
-- **Administration** with role-based permissions, dashboards, reporting, and AI-assisted event copy and campaign drafts.
+- **Administration** with role-based permissions, dashboards, reporting, AI-assisted event copy, and an MCP integration for preparing campaign drafts.
 
 ## Teaching AI and making it part of software delivery
 
