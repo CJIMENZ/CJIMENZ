@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Change desk</title>
+<style>
+*{box-sizing:border-box}body{background:#f4f4ee;color:#183a38;font:16px system-ui;margin:auto;max-width:1050px;padding:clamp(18px,4vw,50px)}
+h1{font:normal clamp(2.6rem,6vw,4.4rem) Georgia;margin:0 0 1rem}h2{font-size:1.15rem;margin:0 0 1rem}
+main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:1rem}
+section{background:white;padding:1.2rem;border:1px solid #bfcdc7;border-radius:10px}label{display:block;font-weight:600}
+input,button{font:inherit;padding:.65rem;margin:.6rem 0}input{width:100%}button{border:0;border-radius:5px;background:#19554e;color:white;cursor:pointer}
+iframe{width:100%;height:280px;border:0}ol{padding-left:1.5rem}li{margin:.7rem 0;overflow-wrap:anywhere}small{display:block;color:#445d59}
+@media(max-width:700px){main{grid-template-columns:1fr}}
+</style></head>
+<body><h1>Change desk</h1><main><section><form id="form"><label for="message">Request a change to the notice board</label>
+<input id="message" maxlength="500" placeholder="Make it purple" required><small>Try “Make it blue” or “Rename to Marina updates”.</small>
+<button>Queue change</button></form><p role="status" id="status"></p><h2>Request history</h2><ol id="jobs"></ol></section>
+<section><h2>Deployed preview</h2><iframe title="Live harbor notice board" src="/preview"></iframe></section></main>
+<script>
+const form=document.querySelector('form'), input=document.querySelector('input'), statusLine=document.querySelector('#status');
+let lastLive;
+async function refresh(){
+  const response=await fetch('/jobs'); if(!response.ok)throw Error('History unavailable');
+  const jobs=await response.json();
+  document.querySelector('#jobs').replaceChildren(...jobs.map(job=>{
+    const li=document.createElement('li'), detail=document.createElement('small');
+    li.append(job.message); detail.textContent=job.status+' '+(job.status==='live'?job.detail.slice(0,10):job.detail);
+    li.append(detail); return li;
+  }));
+  const live=jobs.find(job=>job.status==='live')?.detail;
+  if(live && live!==lastLive){document.querySelector('iframe').src='/preview';lastLive=live}
+}
+form.onsubmit=async event=>{
+  event.preventDefault();
+  try{const r=await fetch('/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:input.value})});
+    if(!r.ok)throw Error('Request rejected');input.value='';statusLine.textContent='Queued';await refresh();
+  }catch(e){statusLine.textContent=e.message}
+};
+async function poll(){try{await refresh()}catch(e){statusLine.textContent=e.message}setTimeout(poll,1200)}poll();
+</script></body></html>
