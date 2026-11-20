@@ -51,6 +51,10 @@ One of my favorite pilots turned a merge request into a **90-second before-and-a
 
 > “You can outsource the lookup, you can’t outsource the accountability.”
 
+## Just for family
+
+For my wife's birthday this year, I turned our family photo album into a page about her year, the one our daughter arrived. [Happy Birthday, Ellie](https://cjimenz.github.io/ellie-birthday/)
+
 ## Get in touch
 
 Have an app idea or a team that wants to build with AI? Email me at [christian.jimenez0408@gmail.com](mailto:christian.jimenez0408@gmail.com).
