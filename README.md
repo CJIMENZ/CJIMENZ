@@ -6,9 +6,11 @@ I use AI to dream up dinosaur adventures with my kids, and I’m the friend peop
 
 In Denver, I give back through [Denver Energy Network](https://www.denverenergynetwork.com/). I serve on the board and build the tools our volunteers use to put on events, stay in touch with members, and bring the local energy community together.
 
-AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents.
+AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://aicoffeeshop.dev), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents.
 
 ## Selected work
+
+**Change desk** · I built a way to request a software change from inside the app itself. A broker queued the message, a worker with its own checkout made the edit, and the phone showed when the pushed commit was live. The public version lets you follow a request from the browser to a real Git commit and a deployed local preview. [Run the demo and explore the architecture](https://github.com/CJIMENZ/CJIMENZ/tree/main/examples/change-desk)
 
 The code for these two projects is private. The engineering notes walk through how each one works.
 
