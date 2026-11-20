@@ -20,6 +20,12 @@ I built an OAuth-secured MCP interface with scoped access. I verified the migrat
 
 ## Denver Energy Network · The site and the work behind it
 
-As a board member I lead the website and AI work. I built the Next.js and MongoDB platform around what the volunteers do between events. One team tracks sponsor outreach, another drafts and schedules SendGrid campaigns, and volunteers register and check in guests. The admin tools carry each event from a Google Calendar entry through registration, QR check-in, and follow-up. The same platform includes role-based access, Stripe payments and webhook handling, automated receipts, and AI-assisted campaign drafts.
+As a board member, I built the site around how our volunteers run an event. Someone registers on the site, gets a confirmation with their QR code through Gmail, and checks in with that code at the door. The same event record supports reminders and attendee follow-up. Alongside it, the team manages sponsors, mailing lists, Google Calendar events, and Stripe payments and receipts. [Visit Denver Energy Network](https://www.denverenergynetwork.com/)
 
-The [public site](https://www.denverenergynetwork.com/) shows the events and the community signup. The admin source is private.
+Gmail is part of the application in both directions. The campaign scheduler sends through the Gmail API in batches and tracks recipients so an interrupted send can resume. Going the other way, the site checks the connected inbox for delivery failures and suppresses bounced addresses in the mailing list. Volunteers can manage a campaign from the site and the results feed back into the list they’ll use next time.
+
+## Denver Petroleum Club · Operating a site through MCP
+
+I built a white-label Next.js site for the club and gave it a Model Context Protocol (MCP) server for the work that happens after the layout is in place. An organizer can ask a connected assistant to create an event, attach a sponsor, and draft an invitation for a mailing group. Each step uses a named operation on the club’s records. The invitation is saved as a draft for review. [Explore the Denver Petroleum Club build](https://denver-petroleum-club.vercel.app/)
+
+The same interface can register an attendee, update a membership, or revise approved wording on a public page while preserving its layout and payment links. That’s the part I’d reuse on another site. The site defines the actions its business supports, and the assistant can call them directly. For a storefront, one such action might be submitting an order. For the club, it’s running an event from the first listing to the attendee list.
