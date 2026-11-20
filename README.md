@@ -1,6 +1,6 @@
 # Christian Jimenez-Escorcia
 
-**Software founder · Consultant · Nonprofit board member**
+**Staff Engineer at Liberty Energy · Co-founder of Accelerated Innovations · Nonprofit board member · Denver**
 
 I use AI to dream up dinosaur adventures with my kids, and I’m the friend people call when they have an app idea they want to try. I co-founded **Accelerated Innovations**, help businesses figure out what’s worth building, and teach engineering teams how to use AI on software they ship. My favorite part of teaching is handing over the keyboard and seeing where someone else takes it.
 
@@ -9,6 +9,8 @@ In Denver, I give back through [Denver Energy Network](https://www.denverenergyn
 AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://github.com/CJIMENZ/ai-coffee-shop-course), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents.
 
 ## Selected work
+
+The code for these two projects is private. The engineering notes walk through how each one works.
 
 **Denver Energy Network** · I built the platform our volunteers use from the first sponsor conversation to the last guest checking in. It connects the CRM and mailing lists with scheduled campaigns, event registration, QR check-in, and Stripe receipts. [Live site](https://www.denverenergynetwork.com/) · [Engineering notes](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it)
 
@@ -37,10 +39,14 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 ## At Liberty Energy
 
-Of course, I need a day job too. I’m a **Staff Engineer – Application Support** at Liberty Energy, where I lead a development team’s technical work and serve as product owner for a logistics platform. I prototype workflows with field users, then work with QA and platform engineers through GitLab CI/CD, staging, and the production release decision. [Field pilots, QA, and releases](engineering-notes.md#liberty-energy--logistics-software)
+I’m a **Staff Engineer – Application Support** at Liberty Energy, where I lead a development team’s technical work and serve as product owner for a logistics platform. I prototype workflows with field users, then work with QA and platform engineers through GitLab CI/CD, staging, and the production release decision. [Field pilots, QA, and releases](engineering-notes.md#liberty-energy--logistics-software)
 
 At Liberty, I’ve trained **about 500 people on Microsoft 365 Copilot** and **about 50 on Claude**, by my estimate. Our nine-session Copilot training report recorded **69% more weekly actions and 41% more weekly active users** across the measurement window. I helped shape the adoption plan and coach engineers on taking a decision from Teams into Jira and through code review. The engineer writes the acceptance criteria, checks the diff, and owns the merge.
 
 One of my favorite pilots turned a merge request into a **90-second before-and-after video**. Playwright captured the change, ElevenLabs narrated it, and Remotion rendered it. The clips took under five minutes of developer time each in the pilot, and stakeholders could leave feedback right where the change was being reviewed.
 
 > “You can outsource the lookup, you can’t outsource the accountability.”
+
+## Get in touch
+
+Have an app idea or a team that wants to build with AI? Email me at [christian.jimenez0408@gmail.com](mailto:christian.jimenez0408@gmail.com).
