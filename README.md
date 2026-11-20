@@ -14,7 +14,9 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 The code for these two projects is private. The engineering notes walk through how each one works.
 
-**Denver Energy Network** · I built the platform our volunteers use from the first sponsor conversation to the last guest checking in. It connects the CRM and mailing lists with scheduled campaigns, event registration, QR check-in, and Stripe receipts. [Live site](https://www.denverenergynetwork.com/) · [Engineering notes](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it)
+**Denver Energy Network** · I built the platform our volunteers use to run events. Gmail delivers registration confirmations, QR codes, and campaigns. The site reads delivery failures back from the inbox to keep the mailing list current. [Visit DEN](https://www.denverenergynetwork.com/) · [How the Gmail integration works](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it)
+
+**Denver Petroleum Club** · I built a white-label site that an organizer can operate through a connected AI assistant. Once the layout is in place, the organizer can create an event, attach a sponsor, and draft its email campaign through the site’s MCP server. [Explore the build](https://denver-petroleum-club.vercel.app/) · [How the business actions work](engineering-notes.md#denver-petroleum-club--operating-a-site-through-mcp)
 
 **AI Meeting Memory** · I wanted to record a meeting on my phone and trust that I could recover it if my transcription worker went offline. The recorder resumes interrupted uploads, workers can retry jobs, and cleanup waits until the saved transcript passes a checksum check. [System design](engineering-notes.md#ai-meeting-memory--a-recorder-that-can-recover) · [Recovery code](https://github.com/CJIMENZ/cpu-transcript-recovery/blob/main/transcribe_cpu.py)
 
