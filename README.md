@@ -10,6 +10,8 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 ## Selected work
 
+**Bedtime Story Studio** · I built a continuing fantasy series for my kids, narrated it with ElevenLabs, and turned the recordings into an audio library. [Listen to the stories and read the case study](https://cjimenz.github.io/bedtime-story-studio/)
+
 **Calcifer · Day One** · I set up four distinct AI roles around a shared work board, then measured what shipped and what still needed a human. [Read the case study and download the animated recap](case-studies/calcifer-day-one/)
 
 The code for these two projects is private. The engineering notes walk through how each one works.
