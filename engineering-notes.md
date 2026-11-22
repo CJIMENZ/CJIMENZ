@@ -2,6 +2,10 @@
 
 [Back to the profile](README.md)
 
+## Calcifer · Day One
+
+I gave a team of agents separate roles, a shared Board, and an auditable handoff. The [case study and animated recap](case-studies/calcifer-day-one/) report the first day’s results and distinguish shipped routing infrastructure from unattended pickup still under test.
+
 ## Liberty Energy · Logistics software
 
 **From field testing to a production decision.** I’m the product owner for a logistics platform that planners, dispatchers, and carriers use to coordinate loads. I build working UI prototypes when the team needs to settle a workflow with field users. I turn the feedback into acceptance criteria and work with frontend, backend, QA, and DevOps to get the change through staging. I do stage acceptance and help make the call on whether to go to production. That work includes triaging field issues, writing incident follow-ups, and feeding regressions back into QA.

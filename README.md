@@ -10,6 +10,8 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 ## Selected work
 
+**Calcifer · Day One** · I set up four distinct AI roles around a shared work board, then measured what shipped and what still needed a human. [Read the case study and download the animated recap](case-studies/calcifer-day-one/)
+
 **Change desk** · I built a way to request a software change from inside the app itself. A broker queued the message, a worker with its own checkout made the edit, and the phone showed when the pushed commit was live. The public version lets you follow a request from the browser to a real Git commit and a deployed local preview. [Run the demo and explore the architecture](https://github.com/CJIMENZ/CJIMENZ/tree/main/examples/change-desk)
 
 The code for these two projects is private. The engineering notes walk through how each one works.
