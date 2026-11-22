@@ -2,7 +2,7 @@
 
 **Staff Engineer at Liberty Energy · Co-founder of Accelerated Innovations · Nonprofit board member · Denver**
 
-I have a team of AI agents that builds custom fantasy worlds for my kids’ bedtime stories. I’m also the friend people call when they have an app idea they want to try. I co-founded **Accelerated Innovations**, help businesses figure out what’s worth building, and teach engineering teams how to use AI on software they ship. My favorite part of teaching is handing over the keyboard and seeing where someone else takes it.
+Using AI every day has helped me do things I used to think were out of reach. I built a team of agents that dreams up fantasy worlds for my kids’ [bedtime stories](https://cjimenz.github.io/bedtime-story-studio/), co-founded **Accelerated Innovations**, and started teaching engineering teams how to use AI on software they ship. I’m still the friend people call with an app idea. My favorite part is handing over the keyboard and seeing what they build.
 
 In Denver, I give back through [Denver Energy Network](https://www.denverenergynetwork.com/). I serve on the board and build the tools our volunteers use to put on events, stay in touch with members, and bring the local energy community together.
 
@@ -12,7 +12,7 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 **Bedtime Story Studio** · I built a continuing fantasy series for my kids, narrated it with ElevenLabs, and turned the recordings into an audio library. [Listen to the stories and read the case study](https://cjimenz.github.io/bedtime-story-studio/)
 
-**Calcifer · Day One** · I set up four distinct AI roles around a shared work board, then measured what shipped and what still needed a human. [Read the case study and download the animated recap](case-studies/calcifer-day-one/)
+**Calcifer · Day One** · I set up four distinct AI roles around a shared work board, then measured what shipped and what still needed a human. [Read the case study and play the recap](https://cjimenz.github.io/CJIMENZ/case-studies/calcifer-day-one/)
 
 The code for these two projects is private. The engineering notes walk through how each one works.
 
