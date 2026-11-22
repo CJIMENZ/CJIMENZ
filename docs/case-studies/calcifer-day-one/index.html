@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11141c">
+<meta name="description" content="What shipped in the first day of Calcifer’s agent-team experiment, with an interactive recap.">
+<title>Calcifer · Day One</title>
+<style>
+:root{color-scheme:dark;--bg:#11141c;--surface:#1b202e;--edge:#4d5670;--ink:#f8f3e9;--soft:#bfc7da;--flame:#ffb07b;--aqua:#86e6d6;--purple:#c6b0f8}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 4%,#31243b 0,transparent 55%),var(--bg);color:var(--ink);font:1rem/1.6 system-ui,sans-serif;min-height:100vh}main{width:min(100% - 2rem,62rem);margin:auto;padding:clamp(1.2rem,5vw,3rem) 0}.eyebrow,.badge,nav{font:700 .75rem/1.45 ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase}.eyebrow{color:var(--flame)}header{display:flex;gap:1rem;justify-content:space-between;align-items:baseline;margin-bottom:1rem}header p{margin:0;color:var(--soft);font-size:.85rem}.slide{position:relative;border:1px solid var(--edge);border-radius:1.4rem;padding:clamp(1.15rem,5.5vw,4rem);min-height:24rem;display:grid;align-content:center;gap:1rem;background:linear-gradient(142deg,#202635,#171a24 75%);margin-bottom:.85rem;overflow:hidden}.slide[hidden],nav[hidden]{display:none}.slide h1,.slide h2{font-size:clamp(2rem,7vw,5.2rem);letter-spacing:-.075em;line-height:1.04;margin:0;max-width:16ch}.slide h2{font-size:clamp(1.85rem,5.7vw,3.8rem)}.slide p{color:var(--soft);max-width:56ch;margin:0}.slide h1 em{color:var(--flame);font-style:normal}.crew,.metrics,.lanes,.arcade{display:grid;gap:.55rem;margin:.5rem 0 0;padding:0;list-style:none}.crew,.arcade{grid-template-columns:repeat(auto-fit,minmax(7rem,1fr))}.crew li,.arcade li,.metrics>div,.lane{background:var(--surface);border:1px solid var(--edge);border-radius:.65rem;padding:.65rem .85rem}.crew i{display:inline-block;width:.65rem;height:.65rem;border-radius:.15rem;background:var(--aqua);margin-right:.35rem}.crew li:nth-child(even) i{background:var(--purple)}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metrics dt{color:var(--soft);font-size:.84rem}.metrics dd{font-size:clamp(1.55rem,7vw,3.2rem);font-weight:770;line-height:1.25;margin:0;color:var(--flame);letter-spacing:-.06em}.split{height:.55rem;border-radius:.5rem;background:var(--purple);margin-top:.5rem;overflow:hidden}.split span{height:100%;width:87.18%;display:block;background:var(--aqua)}.lanes{grid-template-columns:repeat(5,minmax(0,1fr));position:relative}.lane{padding:.35rem;text-align:center;font-size:.75rem;color:var(--soft);min-height:5.5rem}.ticket{position:absolute;top:2.1rem;left:0;width:calc(20% - .55rem);background:var(--flame);color:#261b15;display:grid;place-items:center;padding:.22rem 0;font-size:.75rem;font-weight:800;border-radius:.4rem}.playing .ticket{animation:handoff 8s ease-in-out both}.paused .ticket{animation-play-state:paused}.slide:not([hidden]){animation:enter .32s ease-out both}@keyframes enter{from{opacity:.25;transform:translateY(8px)}to{opacity:1;transform:none}}@keyframes handoff{0%,14%{left:0}23%,34%{left:20.1%}43%,54%{left:40.3%}63%,74%{left:60.4%}83%,100%{left:80.6%}}
+.office{display:grid;grid-template-columns:repeat(13,1fr);width:min(100%,21rem);gap:3px;margin:0;padding:7px;border:1px solid var(--edge);border-radius:.65rem;background:#161b25}.pixel{aspect-ratio:1;border-radius:2px;background:#725977}.pixel.wall{background:#354259}.pixel.desk{background:#dd9b72}.pixel.agent{background:var(--aqua)}.pixel.pool{background:#398976}.pixel.door{background:var(--flame)}.arcade li::before{display:block;content:"";background:var(--purple);width:1.5rem;height:.75rem;border-radius:2px;margin:0 0 .4rem}.arcade li:nth-child(even)::before{background:var(--aqua)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:.45rem;flex-wrap:wrap;padding:.25rem 0}button{font:inherit;letter-spacing:inherit;text-transform:inherit;border:1px solid var(--edge);border-radius:.55rem;min-height:44px;padding:.25rem .6rem;background:var(--surface);color:var(--ink);cursor:pointer}button:focus-visible{outline:3px solid var(--aqua);outline-offset:3px}button:disabled{opacity:.55;cursor:default}#play{border-color:var(--flame);color:var(--flame)}#status{color:var(--soft)}footer{font-size:.8rem;color:var(--soft);margin-top:.8rem}
+@media(max-width:420px){.slide{min-height:25rem}.metrics>div{padding:.5rem}.metrics dt{font-size:.7rem}.lane,.ticket{font-size:.65rem}.lanes{gap:.2rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+
+body{background:radial-gradient(ellipse at 90% 0%,#3b2737,transparent 42rem),var(--bg)}
+main{width:min(100% - 2.5rem,70rem);padding:clamp(2rem,6vw,5rem) 0 4rem}
+a{color:var(--flame);text-underline-offset:.2em}
+a:focus-visible{outline:3px solid var(--aqua);outline-offset:4px}
+.hero{display:block;padding-bottom:2rem;margin:0 0 2rem;border-bottom:1px solid var(--edge)}
+.hero .eyebrow{font-size:.86rem}
+.hero h1{font-size:clamp(3.35rem,10vw,7.4rem);font-weight:760;letter-spacing:-.085em;line-height:.98;margin:.45rem 0 1rem}
+.hero h1 span{color:var(--flame)}
+.hero .deck{font-size:clamp(1.13rem,3vw,1.43rem);color:var(--soft);line-height:1.5;max-width:45ch}
+h2{font-size:clamp(1.65rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.04em;margin:.1rem 0 1rem}
+.recap{margin-bottom:2.8rem}
+.recap-head{display:flex;justify-content:space-between;align-items:baseline;gap:.35rem 1rem;flex-wrap:wrap}
+.recap-head p{color:var(--soft);margin:0 0 1rem}
+.slide h3{font-size:clamp(2rem,6vw,4.5rem);letter-spacing:-.075em;line-height:1.04;margin:0;max-width:16ch}
+.slide h3 em{color:var(--flame);font-style:normal}
+.slide{min-height:24rem}
+#controls{justify-content:flex-start;gap:.65rem;font-size:.8rem}
+#status{margin-left:auto}
+.story{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1.7rem 3rem}
+.story section{border-top:1px solid var(--edge);padding-top:1.25rem}
+.story p,.story li{color:var(--soft)}
+.story p{margin:.65rem 0}
+.story ol{padding-left:1.35rem;margin:0 0 .85rem}
+.story li+li{margin-top:.34rem}
+.story strong{color:var(--ink)}
+footer{border-top:1px solid var(--edge);margin-top:2rem;padding-top:1.15rem;color:var(--soft);font-size:.9rem}
+@media(max-width:680px){.story{grid-template-columns:1fr}.hero h1 span{display:block}.slide{min-height:22rem}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <p class="eyebrow"><time datetime="2026-11-21">November 21</time>–<time datetime="2026-11-22">22, 2026</time></p>
+    <h1>Calcifer <span>Day One</span></h1>
+    <p class="deck">I wanted to run a software team made up of agents without becoming the person who moves every ticket by hand.</p>
+  </header>
+
+  <section class="recap" id="recap" aria-labelledby="recap-title">
+    <div class="recap-head"><h2 id="recap-title">The animated recap</h2><p>Seven scenes · about a minute</p></div>
+<section class="slide" aria-labelledby="s1">
+ <div class="eyebrow">01 / The kickoff</div><h3 id="s1">One day.<br>One AI crew.<br><em>117 merges.</em></h3>
+ <p>I wanted an AI team that could share a board without making me move every ticket.</p>
+ <ul class="crew"><li><i></i>PM</li><li><i></i>Dev</li><li><i></i>Review</li><li><i></i>QA</li></ul>
+</section>
+<section class="slide" aria-labelledby="s2">
+ <div class="eyebrow">02 / The count</div><h3 id="s2">A busy first day.</h3>
+ <dl class="metrics"><div><dt>Merged PRs</dt><dd>117</dd></div><div><dt>In Calcifer</dt><dd>102</dd></div><div><dt>Repositories</dt><dd>4</dd></div></dl>
+ <div class="split" aria-hidden="true"><span></span></div>
+ <p>GitHub merges in roughly 19 hours. That is not a count of features, deployments, or unattended work.</p>
+</section>
+<section class="slide" aria-labelledby="s3">
+ <div class="eyebrow">03 / The workflow</div><h3 id="s3">Follow one ticket.</h3>
+ <ol class="lanes"><li class="lane">To Do</li><li class="lane">Doing</li><li class="lane">Review</li><li class="lane">QA</li><li class="lane">Done</li><li class="ticket" aria-hidden="true">Ticket</li></ol>
+ <p>PM scopes it. Dev builds it. Review checks the change. QA tests the deployed build. The owner closes it with evidence attached.</p>
+</section>
+<section class="slide" aria-labelledby="s4">
+ <div class="eyebrow">04 / The signal</div><h3 id="s4">Assigned isn’t picked up.</h3>
+ <p>The board records who should act. The handoff, work log, and linked QA evidence help show who actually did. Display labels alone don’t give an agent authority.</p>
+</section>
+<section class="slide" aria-labelledby="s5">
+ <div class="eyebrow">05 / The office</div><h3 id="s5">Give the crew a space.</h3>
+ <div class="office" id="office" role="img" aria-label="Illustrative pixel-art office with desks, agents, and a pool table"></div>
+ <p>Each role has its own desk. Individual messages and group discussions give the work a place to happen outside the board.</p>
+</section>
+<section class="slide" aria-labelledby="s6">
+ <div class="eyebrow">06 / After hours</div><h3 id="s6">Yes, there’s a pool table.</h3>
+ <ul class="arcade"><li>Pong</li><li>Minesweeper</li><li>Eight-ball</li></ul>
+ <p>The break room makes the office feel like a place I can walk around, not just another dashboard.</p>
+</section>
+<section class="slide" aria-labelledby="s7">
+ <div class="eyebrow">07 / The next test</div><h3 id="s7">Can it run without a nudge?</h3>
+ <p>The identities and handoffs shipped. Automatic pickup through the whole workflow was still being tested. That’s the next benchmark I care about.</p>
+</section>
+<nav id="controls" aria-label="Recap playback" hidden>
+ <button id="prev" type="button" aria-label="Previous scene">Previous</button>
+ <button id="play" type="button">Play</button>
+ <button id="next" type="button" aria-label="Next scene">Next</button>
+ <span id="status" aria-live="polite"></span>
+</nav>
+  </section>
+
+  <article class="story" aria-label="Day One case study">
+    <section>
+      <h2>What shipped</h2>
+      <p>Calcifer started as a meeting recorder. For this experiment, I gave it a shared work board, four distinct Codex roles, and a digital office where I could see and talk to the team.</p>
+      <p><strong>117 pull requests merged across four repositories</strong> in roughly 19 hours. Calcifer accounted for 102, and related projects accounted for 15. The count measures GitHub merges. Features, production deployments, and unattended work would each need their own measures.</p>
+      <p>PM, Dev, Review, and QA got separate identities and a shared record of the ticket, handoff, and evidence. Each role had a desk, the team could meet in the War Room, and the break room got a pool table.</p>
+    </section>
+    <section>
+      <h2>How one ticket moves</h2>
+      <ol>
+        <li><strong>PM</strong> defines and assigns the work on the board.</li>
+        <li><strong>Dev</strong> claims it and links a pull request.</li>
+        <li><strong>Review</strong> checks the change before it merges.</li>
+        <li><strong>QA</strong> tests the deployed build and records the result.</li>
+        <li><strong>The owner</strong> closes the ticket with its evidence attached.</li>
+      </ol>
+      <p>Calcifer stores the handoff for an eligible recipient. The team can compare delivery with pickup in the work log, while readers can discover work with read access.</p>
+    </section>
+    <section>
+      <h2>What I’d measure next</h2>
+      <p>Can one ticket get picked up without a nudge, return to the right role when a check fails, and reach deployed QA with an auditable record? Role connections and handoff storage shipped. Unattended pickup across the full path was still being validated.</p>
+    </section>
+  </article>
+  <footer>Based on the original Day One recap created with Hark. The board and office scenes are illustrations. <a href="https://github.com/CJIMENZ/CJIMENZ/tree/main/case-studies/calcifer-day-one">Case-study source on GitHub</a>.</footer>
+</main>
+<script>
+(() => {
+  const scenes = [...document.querySelectorAll('.slide')];
+  const controls = document.getElementById('controls');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  const play = document.getElementById('play');
+  const status = document.getElementById('status');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const durations = [7500, 7500, 9500, 8000, 8000, 6500, 8500];
+  const layout = [
+    '#############','#ddd#..d.d..#','#.a.+..a.a..#',
+    '#...#.......#','##+###..####+','#......#....#',
+    '#.d.a..#.pp.#','#......#.pp.#','#############'
+  ];
+  const colors = {'#':'wall',d:'desk',a:'agent',p:'pool','+':'door'};
+  const office = document.getElementById('office');
+  for (const row of layout) for (const cell of row) {
+    const pixel = document.createElement('span');
+    pixel.className = 'pixel ' + (colors[cell] || '');
+    pixel.setAttribute('aria-hidden','true');
+    office.appendChild(pixel);
+  }
+  let index = 0, timer = 0, playing = false;
+  function render() {
+    clearTimeout(timer);
+    scenes.forEach((scene,i) => {
+      scene.hidden = i !== index;
+      scene.classList.toggle('playing', i === index && !reduced.matches);
+      scene.classList.toggle('paused', !playing);
+    });
+    prev.disabled = index === 0;
+    next.disabled = index === scenes.length - 1;
+    play.textContent = playing ? 'Pause' : index === scenes.length - 1 ? 'Replay' : 'Play';
+    status.textContent = 'Scene ' + (index + 1) + ' / ' + scenes.length;
+    if (playing) timer = setTimeout(() => {
+      if (index < scenes.length - 1) index++;
+      else playing = false;
+      render();
+    }, durations[index]);
+  }
+  function jump(delta) {
+    playing = false;
+    index = Math.max(0, Math.min(scenes.length - 1, index + delta));
+    render();
+  }
+  prev.addEventListener('click', () => jump(-1));
+  next.addEventListener('click', () => jump(1));
+  play.addEventListener('click', () => {
+    if (!playing && index === scenes.length - 1) index = 0;
+    playing = !playing;
+    render();
+  });
+  document.getElementById('recap').addEventListener('keydown', event => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.defaultPrevented) return;
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault();
+      jump(event.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+  controls.hidden = false;
+  render();
+})();
+</script>
+</body>
+</html>
