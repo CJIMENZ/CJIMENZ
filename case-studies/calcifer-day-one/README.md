@@ -2,7 +2,7 @@
 
 I wanted to see whether I could run a software team made up of agents without becoming the person who moves every ticket by hand. Calcifer started as a meeting recorder. For this experiment, I gave it a shared work board, four distinct Codex roles, and a digital office where I could see and talk to the team.
 
-[Open the animated recap file](day-one.html), choose **Download raw file** on GitHub, and open the saved file in a browser. It’s a single HTML file with no dependencies or network calls. The figures and engineering notes are also below.
+[Read the case study and play the animated recap in your browser](https://cjimenz.github.io/CJIMENZ/case-studies/calcifer-day-one/). You can also [download the standalone recap](day-one.html) for offline viewing.
 
 ## What shipped
 
