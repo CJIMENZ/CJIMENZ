@@ -2,7 +2,7 @@
 
 **Persistent mastery across disposable executions**
 
-Christian Jimenez-Escorcia · Research north star · v0.1 · November 25, 2026
+Christian Jimenez-Escorcia · Research north star · v0.2 · November 25, 2026
 
 > **Working thesis.** An original research and engineering agenda, developed from my conversations with AI and documented with AI assistance. Proposed mechanisms and hypothetical benefits are distinguished from demonstrated results. This is not a peer-reviewed paper or a claim of machine consciousness.
 
@@ -64,6 +64,16 @@ The first environment is a software organization. Meridian plans and coordinates
 
 Existing Calcifer work has demonstrated versioned role instructions, durable Board checkpoints and reviewed software releases. The larger evolution engine described here is the target, not a claim that all its capabilities are already implemented or validated. Review-first CI and structured execution queues form a useful foundation, but an automated learning pipeline, lineage composition and comparative evaluation still need engineering and empirical proof.
 
+### 6a. Small, verifiable work at scale
+
+I want to test how much of what we usually ask a frontier model to do can instead be carried by the way the work is organized. Take a large goal, split it into milestones, then keep splitting until each slice has a clear input, a concrete deliverable, explicit constraints and a way to verify the result. A modest local model can contribute if it can complete and prove that slice. Use stronger models or human specialists where uncertainty, integration risk or the evidence warrants it. The coordinator should earn its role through decisions it makes well, not through the price of the model behind it.
+
+As a thought experiment, suppose I ask Calcifer to build a car. The Board would turn that into related work on requirements, engineering, sourcing, manufacturing and testing. A rubber specialist could be given a material specification, volume, deadline and cost ceiling, then compare buying from suppliers, making it in-house or acquiring capacity. If finance rejects a proposed acquisition, it should record why and turn the constraint into new work: find a supplier, revise the design, or explore a funding proposal within an approved scope. Recurring needs can become specialist roles with playbooks, examples and tests. A proposal does not authorize a purchase, a new business, or a change of mission. Physical engineering, safety validation and consequential decisions still require qualified people and explicit approval.
+
+A timer should wake a worker; the Board should tell it where to resume. On each wake, finish or advance the exact saved assignment before claiming another. If a test, dependency or decision is still pending, record what will make the next step runnable and release shared capacity without dropping ownership. Other workers can take independent slices; the system should add or remove capacity with the ready queue rather than spawning more agents to compensate for unclear work. Recurring runs are a starting point, not a reason for me to keep typing `loop`.
+
+This is a testable hypothesis, not a claim that enough inexpensive workers can solve any problem. Poorly defined interfaces, correlated mistakes, review load and integration costs can erase the gains from parallel work. The useful outcome is a working, independently checked result that costs less or needs fewer interventions, not a larger swarm.
+
 ## 7. A controlled feedback loop
 
 The environment should treat friction as evidence: a missing tool, repeated failed test, stale instruction, duplicated claim, context-overflow incident or unsuccessful workaround is a possible improvement opportunity. Record it against a concrete target, capability version and source. Group repeated observations using stable fingerprints. Preserve their differences instead of assuming every similar error shares a cause.
@@ -79,6 +89,8 @@ I want to measure whether this system increases expertise across executions, rat
 The first decisive test is the cold-start test. Stop an authorized worker after a durable checkpoint, start a clean execution with no prior chat transcript, and give it only the normal startup entry point. It should identify the exact next eligible action, avoid repeating known failed attempts, respect ownership and permissions, and make measurable progress. Repeat at development, review, CI, deployment and QA boundaries. Test both interruption and recovery, including missing capabilities and conflicting records.
 
 The second test is learning transfer. Give a new instance a similar but not identical problem. Compare a baseline lineage to an evolved lineage using held-out tasks, real outcomes, repeated runs, and budget-normalized measurements. Test forks and combinations against the same baseline. A negative or inconclusive result is useful if accurately reported.
+
+Compare a frontier-led baseline with a mixed-capability team on the same feature, acceptance criteria and review gates. Track local-worker share, end-to-end cost and time, integration rework, escaped defects and manual restarts. Count saves and resumes separately from new claims, and verify that a later scheduled wake moves the same checkpoint without a human prompt.
 
 Measure at least:
 
@@ -101,5 +113,7 @@ The asset I want to build is not one long-running agent. It is a system whose kn
 My ambition is to explore what becomes possible when the useful lifetime of intelligence is no longer constrained by the lifetime of the particular conversation that produced it. Whether this yields faster mastery, deeper specialization or better discovery is a hypothesis to test. The evidence, not the metaphor, will determine how far it goes.
 
 ---
+
+Version 0.2: added the case for small, verifiable work, mixed-capability teams and hands-off continuation. November 25, 2026.
 
 Version 0.1 — initial public articulation, November 25, 2026. Future revisions should preserve this version's history, state what changed and link supporting evaluations. [Calcifer Day One case study](../case-studies/calcifer-day-one/).
