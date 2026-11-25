@@ -8,6 +8,10 @@ In Denver, I give back through [Denver Energy Network](https://www.denverenergyn
 
 AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he wanted help building an app. I ended up teaching him how to build it himself. That conversation became [AI Coffee Shop](https://aicoffeeshop.dev), a 14-module course that takes you from your first useful prompt to building with Git, APIs, authentication, and agents.
 
+## Current research focus
+
+**The Agent Evolution Thesis** · My north star for building AI systems whose specialized agent lineages accumulate validated experience across short-lived executions. [Read the working thesis](https://cjimenz.github.io/CJIMENZ/agent-evolution/) · [Versioned source](docs/agent-evolution/THESIS.md)
+
 ## Selected work
 
 **Bedtime Story Studio** · I built a continuing fantasy series for my kids, narrated it with ElevenLabs, and turned the recordings into an audio library. [Listen to the stories and read the case study](https://cjimenz.github.io/bedtime-story-studio/)
