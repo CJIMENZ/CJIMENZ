@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calcifer build log: from a phone request to an editable 3D film, with measured timings and lessons for work outside the software delivery pipeline.">
+<title>Calcifer Build Log · November 28, 2026</title>
+<style>
+:root{color-scheme:dark;--bg:#111d24;--panel:#192b34;--line:#344850;--text:#f4eddf;--muted:#abbec2;--amber:#f0be77;--teal:#95dac1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui, sans-serif}main{width:min(100% - 36px,940px);margin:auto;padding:44px 0 62px}a{color:var(--teal);text-underline-offset:4px}.back,.kicker,.tag{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750}.kicker,.tag{color:var(--amber)}.hero{padding:46px 0 34px;border-bottom:1px solid var(--line)}h1{font-size:clamp(2.5rem,8vw,5rem);line-height:1.04;letter-spacing:-.045em;margin:.14em 0 .25em;max-width:770px}h2{font-size:1.6rem;line-height:1.2;letter-spacing:-.02em}p{max-width:74ch}header p{font-size:1.13rem;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}.metric{padding:17px 16px;background:var(--panel);border:1px solid var(--line);border-radius:12px}.metric strong{display:block;color:var(--teal);font-size:1.75rem;line-height:1.25;letter-spacing:-.035em}.metric span, .muted{color:var(--muted)}section{padding:20px 0;border-bottom:1px solid var(--line)}ol{padding-left:1.4rem}li{margin:.6rem 0}.rows{list-style:none;padding:0}.rows li{display:grid;grid-template-columns:minmax(8rem,12rem) 1fr;gap:15px;padding:.75rem 0;border-top:1px solid var(--line);margin:0}.rows strong{color:var(--amber)}footer{padding-top:24px;color:var(--muted)}@media(max-width:600px){.grid{grid-template-columns:1fr}.rows li{grid-template-columns:1fr;gap:3px}.hero{padding:32px 0 20px}}
+</style>
+</head>
+<body><main>
+<a class="back" href="../calcifer-day-one/">← Calcifer · Day One</a>
+<header class="hero"><div class="kicker">Calcifer build log · November 28, 2026</div><h1>From a phone request to a 3D film</h1><p>A day of special projects outside the software development lifecycle: turn an idea into a storyboard, test it as an animatic, build it in Blender, and measure what actually takes time.</p></header>
+<div class="grid" aria-label="Measured highlights"><div class="metric"><strong>4.4×</strong><span>Mac GPU versus cloud CPU for the same tree cut</span></div><div class="metric"><strong>8:04</strong><span>Office concept, photos received to delivery</span></div><div class="metric"><strong>11:09</strong><span>House walkthrough, readable footage to delivery</span></div></div>
+<section><div class="tag">01 / What we built</div><h2>From five seconds to a narrated tour</h2><ol>
+<li><strong>Storyboard and animatic:</strong> try out the idea while the drawings are cheap to change. For a seed becoming a tree, a few shapes and keyframes defined the motion; 120 video frames did not require 120 new drawings.</li>
+<li><strong>Reusable Blender scenes:</strong> model once, change texture, light or camera without rebuilding. The five-second Meadow Cut took 4:24 on a cloud CPU and 1:00 on the 40-core M4 Max via Metal, with matching 432p settings. A more detailed, warm 15-second run took 53.7 seconds for 360 frames. That is a different shot, not a head-to-head benchmark.</li>
+<li><strong>Photo-based office concept:</strong> ten references informed the recreated room. A silent, 23-second first-person film staged an AI request and a fictional portal into a six-pyramid scene.</li>
+<li><strong>Walkthrough from video:</strong> sampled 60 frames from a five-minute reference clip, reused the office, and modeled recognizable interiors. Cuts bridged transitions we could not verify. A 41-second silent concept was followed by a longer ElevenLabs-narrated tour with a fictional finale. The original capture, film masters, and editable sets are private.</li>
+</ol></section>
+<section><div class="tag">02 / The timing experiment</div><h2>Render time is not work time</h2>
+<ul class="rows">
+<li><strong>~8 minutes</strong><span>Glasses setup before filming.</span></li>
+<li><strong>~15 minutes</strong><span>Recording and transfer through the final Drive update; not 15 minutes of active labor.</span></li>
+<li><strong>11:53</strong><span>From the Drive update to readable footage. The large file hit a connector limit; the local Drive mount resolved it.</span></li>
+<li><strong>11:09</strong><span>From readable footage to delivery: 4:14 elapsed for reference review, reconstruction and previews; 6:35 on the GPU; seconds to encode and deliver. Hands-on work was not separately timed.</span></li>
+<li><strong>30:39</strong><span>Later native 1080p render of the same silent cut, versus 6:35 at 504p. Another render overlapped part of the HD run, so this is a production observation, not a controlled resolution benchmark.</span></li></ul>
+<p class="muted">End to end, the first walkthrough took about 46 minutes. The render was only one part of that. For future estimates, record capture, access, model changes, render, export, and verification separately.</p></section>
+<section><div class="tag">03 / Why this was outside the SDLC</div><h2>Direct collaboration for an artifact; the SDLC for a product</h2>
+<p>The deliverable was a reversible film experiment, not application code or a production release. One person could steer the storyboard, inspect a preview, and ask for a change in the same loop. Starting with tickets, parallel workers, and merge gates would have delayed feedback without reducing much risk in this case.</p>
+<p>Keep the work reproducible anyway: version the cut, keep the matching scene and script, verify the export, and log the timings. If the recurring process becomes a creator library, automated render service, or shared product feature, hand that over to requirements, tests, access review, and the usual release process. One session is evidence for the distinction, not proof that one route always wins.</p></section>
+<footer>Calcifer · Special Projects · Build notes, not a property listing</footer></main></body></html>
