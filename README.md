@@ -20,6 +20,8 @@ AI is also what I tinker with for fun. Erik Nelson asked me to coffee because he
 
 The code for these two projects is private. The engineering notes walk through how each one works.
 
+**Calcifer · Special Projects Build Log** · A phone-to-Blender experiment with a timed 3D workflow, editable artifacts, and lessons about when to work outside the software delivery pipeline. [Read the November 28 update](https://cjimenz.github.io/CJIMENZ/case-studies/calcifer-day-update-2026-11-28/)
+
 **Denver Energy Network** · I built the platform our volunteers use to run events. Gmail delivers registration confirmations, QR codes, and campaigns. The site reads delivery failures back from the inbox to keep the mailing list current. [Visit DEN](https://www.denverenergynetwork.com/) · [How the Gmail integration works](engineering-notes.md#denver-energy-network--the-site-and-the-work-behind-it)
 
 **Denver Petroleum Club** · I built a white-label site that an organizer can operate through a connected AI assistant. Once the layout is in place, the organizer can create an event, attach a sponsor, and draft its email campaign through the site’s MCP server. [Explore the build](https://denver-petroleum-club.vercel.app/) · [How the business actions work](engineering-notes.md#denver-petroleum-club--operating-a-site-through-mcp)
